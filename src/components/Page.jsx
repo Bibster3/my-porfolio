@@ -1,9 +1,12 @@
-import React, { useRef, useEffect } from "react";
-import { gsap } from "gsap";
-import { Spotlight } from "./ui/Spotlight";
-import { cn } from "../utils/cn";
+import React from "react";
+import Navbar from "./ui/Navbar";
+import AboutMe from "./AboutMe";
+import BentoGrid from "./ui/BentoGrid";
+import Footer from "./ui/Footer"; // If Footer exists
+import Spotlight from "./ui/Spotlight";
+import NavBar from "./ui/Navbar.jsx";
 
-import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
+
 import {
   IconArrowWaveRightUp,
   IconBoxAlignRightFilled,
@@ -14,27 +17,26 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 
-export default function AboutMe() {
-  const sectionRef = useRef(null);
+const items = [
+  {
+    title: "CalorieMate",
+    description: "A React-based SPA to track daily calorie intake.",
+    header: <h3>Project</h3>,
+    icon: <IconClipboardCopy />,
+  },
+  // Add more items here
+];
 
-  useEffect(() => {
-    const el = sectionRef.current;
-    gsap.fromTo(
-      el.querySelectorAll(".fade-in"),
-      { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, duration: 0.8, stagger: 0.2 }
-    );
-  }, []);
+const Page = () => (
+  <>
+    <main>
+      <Spotlight />
+       <NavBar />
+      <AboutMe />
+      <BentoGrid items={items} />
+    </main>
+    <Footer /> {/* Add Footer if it exists */}
+  </>
+);
 
-  return (
-    <section
-      id="about"
-      ref={sectionRef}
-      className="py-16 px-4 bg-black text-white"
-    >
-      <div className="container mx-auto grid gap-6 lg:grid-rows-2">
-        <Spotlight />
-      </div>
-    </section>
-  );
-}
+export default Page;

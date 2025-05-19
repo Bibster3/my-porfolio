@@ -17,7 +17,7 @@ export default function NavLinks({ isOpen, toggleMenu }) {
       </button>
 
       {isOpen && (
-        <div className="absolute top-16 left-0 w-full bg-black text-white flex flex-col items-center space-y-4 p-4 sm:hidden z-20">
+        <div className="absolute top-16 left-0 w-full bg-gray-900 text-white flex flex-col items-center space-y-4 p-4 sm:hidden z-20">
           <a href="#home" onClick={toggleMenu} className="hover:text-gray-400">Home</a>
           <a href="#portfolio" onClick={toggleMenu} className="hover:text-gray-400">Portfolio</a>
           <a href="#about" onClick={toggleMenu} className="hover:text-gray-400">About</a>
