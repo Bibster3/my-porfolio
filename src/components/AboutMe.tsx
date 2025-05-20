@@ -1,13 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import AnimatedLogo from "./ui/AnimatedLogo.jsx";
 
 
 export default function AboutMe() {
   return (
-    <section id="about" className="min-h-screen bg-gray-900 text-white flex items-center justify-center px-5 sm:px-10">
+    <section id="about" className="min-h-screen bg-gray-900 text-white flex items-start justify-center  pt-12 px-10 sm:px-10">
        
-       <AnimatedLogo />
 
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -15,10 +13,10 @@ export default function AboutMe() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="max-w-3xl text-center"
       >
-        <h2 className="text-4xl font-bold mb-6 text-pink-400">I'm Bilyana</h2>
+        <h2 className="text-4xl font-bold mb-6 text-pink-400">Hi! I'm Bilyana</h2>
         <p className="text-lg leading-relaxed text-gray-300">
           I’m an aspiring <span className="text-pink-400 font-semibold">Front-End Developer</span> passionate about building 
-          clean, responsive, and user-friendly web applications. With hands-on experience in 
+         responsive, and user-friendly web applications. With hands-on experience in 
           <span className="text-pink-400 font-semibold"> HTML, CSS, JavaScript, React, and TypeScript</span>, 
           I recently completed the intensive Front-End Engineer career path at Codecademy, strengthening my 
           skills in modern development practices.

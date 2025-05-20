@@ -1,5 +1,5 @@
-import React from "react";
-import profileImage from "../../public/profile.jpg"; // Adjust the path accordingly
+import React from 'react';
+import profileImage from '../../public/profile.jpg'; // Adjust the path as needed
 
 export default function AnimatedLogo() {
   return (
@@ -12,18 +12,18 @@ export default function AnimatedLogo() {
         stroke="currentColor"
         strokeWidth="4"
       >
-        <circle cx="50" cy="50" r="60" className="opacity-30" />
+        <circle cx="50" cy="50" r="48" className="opacity-30" />
         <path
           d="M 50,2 A 48,48 0 0,1 98,50 A 48,48 0 0,1 50,98 A 48,48 0 0,1 2,50 A 48,48 0 0,1 50,2"
           className="stroke-current animate-dash"
         />
       </svg>
 
-      {/* Larger Profile Image */}
+      {/* Centered Profile Image */}
       <img
         src={profileImage}
         alt="Profile"
-        className="absolute w-24 h-24 rounded-full object-cover"
+        className="absolute top-1/2 left-1/2 w-24 h-24 rounded-full object-cover transform -translate-x-1/2 -translate-y-1/2"
       />
 
       <style>{`

@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "./ui/Navbar";
-import AboutMe from "./AboutMe";
-import BentoGrid from "./ui/BentoGrid";
-import Footer from "./ui/Footer"; // If Footer exists
-import Spotlight from "./ui/Spotlight";
+import Navbar from "./ui/Navbar.jsx";
+import AboutMe from "./AboutMe.js";
+import BentoGrid from "./ui/BentoGrid.js";
+import Footer from "./ui/Footer.js"; // If Footer exists
+import Spotlight from "./ui/Spotlight.js";
 import NavBar from "./ui/Navbar.jsx";
-
+import AnimatedLogo from "./ui/AnimatedLogo.jsx";
 
 import {
   IconArrowWaveRightUp,
@@ -31,7 +31,8 @@ const Page = () => (
   <>
     <main>
       <Spotlight />
-       <NavBar />
+      <NavBar />
+      <AnimatedLogo />
       <AboutMe />
       <BentoGrid items={items} />
     </main>
