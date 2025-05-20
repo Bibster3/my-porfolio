@@ -11,3 +11,11 @@
 html {
     scroll-behavior: smooth;
 }
+
+@keyframes pulse-slow {
+  0%, 100% { transform: scale(1); opacity: 0.1; }
+  50% { transform: scale(1.2); opacity: 0.2; }
+}
+.animate-pulse-slow {
+  animation: pulse-slow 10s ease-in-out infinite;
+}

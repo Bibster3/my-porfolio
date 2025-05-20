@@ -5,7 +5,7 @@ const Portfolio = () => {
     const projects = [
         {
             title: 'CalorieMate',
-            description: 'alorieMate is a responsive web application designed for tracking nutritional intake. It features a user-friendly interface built with HTML, CSS, and JavaScript, ensuring seamless navigation and interactive functionality. Hosted on GitHub Pages, it showcases skills in frontend development, responsive design, and UI/UX principles, making it easy to monitor and manage daily calorie consumption effectively.',
+            description: 'CalorieMate is a responsive web application designed for tracking nutritional intake. It features a user-friendly interface built with HTML, CSS, and JavaScript, ensuring seamless navigation and interactive functionality. Hosted on GitHub Pages, it showcases skills in frontend development, responsive design, and UI/UX principles, making it easy to monitor and manage daily calorie consumption effectively.',
             iframeUrl: 'https://bibster3.github.io/CalorieMate/', 
             githubUrl: 'https://github.com/Bibster3/CalorieMate'
         },
@@ -20,7 +20,6 @@ const Portfolio = () => {
 
     return (
         <div className="portfolio">
-            <h1>Portfolio</h1>
             <div className="project-list">
                 {projects.map((project, index) => (
                     <ProjectCard

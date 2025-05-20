@@ -3,7 +3,7 @@ import profileImage from '../../public/profile.jpg'; // Adjust the path as neede
 
 export default function AnimatedLogo() {
   return (
-    <div className="relative w-32 h-32 flex items-center justify-center text-white">
+    <div className="relative w-64 h- flex items-center justify-center text-white">
       <svg
         className="animate-spin-slow"
         xmlns="http://www.w3.org/2000/svg"
@@ -22,8 +22,8 @@ export default function AnimatedLogo() {
       {/* Centered Profile Image */}
       <img
         src={profileImage}
-        alt="Profile"
-        className="absolute top-1/2 left-1/2 w-24 h-24 rounded-full object-cover transform -translate-x-1/2 -translate-y-1/2"
+        alt="Bilyana Stefanova"
+        className="absolute top-1/2 left-1/2 w-48 h-48 rounded-full object-cover transform -translate-x-1/2 -translate-y-1/2"
       />
 
       <style>{`
