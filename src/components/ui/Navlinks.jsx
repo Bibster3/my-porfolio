@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function NavLinks({ isOpen, toggleMenu }) {
+export default function Navinks({ isOpen, toggleMenu }) {
   return (
     <>
       <div className="hidden sm:flex space-x-4 relative z-10 ml-auto">

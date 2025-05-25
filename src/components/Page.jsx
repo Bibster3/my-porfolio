@@ -1,20 +1,14 @@
 import React from "react";
-import Navbar from "./ui/Navbar.jsx";
-import AboutMe from "./AboutMe.js";
-import Footer from "./ui/Footer.js"; // If Footer exists
-import Spotlight from "./ui/Spotlight.js";
+import AboutMe from "./AboutMe.tsx";
+import Footer from "./ui/Footer.tsx"; // If Footer exists
+import Spotlight from "./ui/Spotlight.tsx";
 import NavBar from "./ui/Navbar.jsx";
 import AnimatedLogo from "./ui/AnimatedLogo.jsx";
 import Portfolio from "./Portfolio"; //
 
 import {
-  IconArrowWaveRightUp,
-  IconBoxAlignRightFilled,
-  IconBoxAlignTopLeft,
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
+
+IconClipboardCopy,
 } from "@tabler/icons-react";
 
 const items = [
