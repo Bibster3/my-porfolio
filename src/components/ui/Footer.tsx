@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
+
   return (
     <footer className="bg-gray-900 text-gray-300 py-8">
       <motion.div
