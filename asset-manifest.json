@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Bibster3/my-portfolio/static/css/main.a814c5bf.css",
+    "main.js": "/Bibster3/my-portfolio/static/js/main.bdc8edc3.js",
+    "static/js/453.acca0757.chunk.js": "/Bibster3/my-portfolio/static/js/453.acca0757.chunk.js",
+    "static/media/profile.jpg": "/Bibster3/my-portfolio/static/media/profile.40bbe8397fd961a59e5d.jpg",
+    "index.html": "/Bibster3/my-portfolio/index.html",
+    "main.a814c5bf.css.map": "/Bibster3/my-portfolio/static/css/main.a814c5bf.css.map",
+    "main.bdc8edc3.js.map": "/Bibster3/my-portfolio/static/js/main.bdc8edc3.js.map",
+    "453.acca0757.chunk.js.map": "/Bibster3/my-portfolio/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a814c5bf.css",
+    "static/js/main.bdc8edc3.js"
+  ]
+}
