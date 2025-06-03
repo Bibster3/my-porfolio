@@ -12,7 +12,7 @@ const Portfolio = () => {
         },
        {
             title: 'WeatherApp',
-            description: 'Weatherly is a modern web application designed to keep you informed about the weather conditions in your area and beyond. Built with React, TypeScript, and Tailwind CSS, Weatherly offers a seamless user experience with real-time updates and intuitive navigation.',
+            description: 'WeatherApp is a modern web application designed to keep you informed about the weather conditions in your area and beyond. Built with React, TypeScript, and Tailwind CSS, Weatherly offers a seamless user experience with real-time updates and intuitive navigation.',
             iframeUrl: 'https://bibster3.github.io/WeatherApp/', 
             githubUrl: 'https://github.com/Bibster3/WeatherApp'
         }
