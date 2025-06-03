@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ResumeDownloadButton from "./ResumeDownloadButton.js";
+import ResumeDownloadButton from "./ResumeDownloadButton";
 import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiGithub } from "react-icons/si";
 
