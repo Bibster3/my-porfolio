@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/bilyana-st/static/css/main.cf3fe9f2.css",
-    "main.js": "/bilyana-st/static/js/main.411a1f87.js",
+    "main.js": "/bilyana-st/static/js/main.17eb4b8d.js",
     "static/js/453.31afec5b.chunk.js": "/bilyana-st/static/js/453.31afec5b.chunk.js",
     "static/media/profile.jpg": "/bilyana-st/static/media/profile.40bbe8397fd961a59e5d.jpg",
     "index.html": "/bilyana-st/index.html",
     "main.cf3fe9f2.css.map": "/bilyana-st/static/css/main.cf3fe9f2.css.map",
-    "main.411a1f87.js.map": "/bilyana-st/static/js/main.411a1f87.js.map",
+    "main.17eb4b8d.js.map": "/bilyana-st/static/js/main.17eb4b8d.js.map",
     "453.31afec5b.chunk.js.map": "/bilyana-st/static/js/453.31afec5b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cf3fe9f2.css",
-    "static/js/main.411a1f87.js"
+    "static/js/main.17eb4b8d.js"
   ]
 }
