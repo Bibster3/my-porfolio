@@ -1,17 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
+import ResumeDownloadButton from "./ResumeDownloadButton.js";
+import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare } from "react-icons/fa";
+import { SiTypescript, SiTailwindcss, SiGithub } from "react-icons/si";
+
 
 
 export default function AboutMe() {
   return (
-    <section id="about" className="min-h-screen bg-gray-900 text-white flex items-start justify-center  pt-12 px-10 sm:px-10">
+    <section id="about" className="min-h-screen bg-gray-900 text-white flex items-start justify-center pt-48 px-6 sm:px-10">
        
 
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="max-w-3xl text-center"
+        className="max-w-5xl text-center sm:text-left px-4"
       >
         <h2 className="text-4xl font-bold mb-6 text-pink-400">Hi! I'm Bilyana</h2>
                <p className="text-lg leading-relaxed text-gray-300">
@@ -31,8 +35,30 @@ export default function AboutMe() {
         <p className="text-lg leading-relaxed text-gray-300 mt-4">
           Currently, I am focusing intensively on front-end development, striving to create impactful and visually appealing interfaces that enhance user interaction and satisfaction.
         </p>
-        <p className="font-semibold">Let's collaborate on your next venture!</p>
+        <p className="font-semibold text-center">Let's collaborate on your next venture!</p>
+         
+         {/* Skill Tags */}
+        <div className="flex flex-wrap justify-center gap-3 mt-8">
+          <SkillTag icon={<FaHtml5 />} label="HTML" />
+          <SkillTag icon={<FaCss3Alt />} label="CSS" />
+          <SkillTag icon={<FaJsSquare />} label="JavaScript" />
+          <SkillTag icon={<SiTypescript />} label="TypeScript" />
+          <SkillTag icon={<FaReact />} label="React" />
+          <SkillTag icon={<SiTailwindcss />} label="Tailwind CSS" />
+          <SkillTag icon={<SiGithub />} label="Git & GitHub" />
+        </div>
+
+         <div className="flex justify-center mt-10 pt-10">
+          <ResumeDownloadButton />
+        </div>
       </motion.div>
     </section>
   );
 }
+
+const SkillTag = ({ icon, label }: { icon: React.ReactNode; label: string }) => (
+  <div className="flex items-center gap-2 bg-pink-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md whitespace-nowrap">
+    {icon}
+    <span>{label}</span>
+  </div>
+);

@@ -40,7 +40,7 @@ export default function Footer() {
             <FaEnvelope />
           </a>
         </div>
-        <p className="text-sm text-gray-500 mt-4">© {new Date().getFullYear()} Bilyana Stefanova. All rights reserved.</p>
+        <p className="text-sm text-gray-500 mt-4">© {new Date().getFullYear()} Built by Bilyana Stefanova. All rights reserved.</p>
       </motion.div>
     </footer>
   );

@@ -2,9 +2,12 @@ import React from "react";
 import AboutMe from "./AboutMe.tsx";
 import Footer from "./ui/Footer.tsx"; // If Footer exists
 import Spotlight from "./ui/Spotlight.tsx";
-import NavBar from "./ui/Navbar.jsx";
+import NavLinks from "./ui/NavLinks.jsx";
 import AnimatedLogo from "./ui/AnimatedLogo.jsx";
-import Portfolio from "./Portfolio"; //
+import Portfolio from "./Portfolio"; 
+import Contact from "./Contact";
+import Divider from "./ui/Divider.tsx";
+
 
 import {
 
@@ -24,14 +27,18 @@ const Page = () => (
   <>
     <main>
       <Spotlight />
-      <NavBar />
-      <div className="absolute top-32 right-32 z-50">
-      <AnimatedLogo />
+      <div className="relative z-50">
+      <NavLinks />
       </div>
+      <div className="hidden sm:flex relative justify-center items-center mt-10 sm:mt-16">
+    <AnimatedLogo />
+  </div>
       <AboutMe />
-<div className="w-64 h-64 bg-pink-400 opacity-10 blur-3xl rounded-full animate-pulse-slow absolute top-20 left-10" />
-
+      <Divider/>
       <Portfolio items={items} /> 
+      <Divider/>
+
+      <Contact/>
     </main>
     <Footer /> {/* Add Footer if it exists */}
   </>
