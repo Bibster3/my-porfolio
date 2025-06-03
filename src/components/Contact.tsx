@@ -25,9 +25,9 @@ const Contact: React.FC = () => {
       setStatus("Please enter a valid email address.");
       return;
     }
-  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID!;
-const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID!;
-const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY!;
+  const serviceId = "service_t0kzt2w";
+const templateId = "template_jn5md0l";
+const publicKey = "mFP23VlY-qjDoxFr1";
 if (!serviceId || !templateId || !publicKey) {
   throw new Error("Missing EmailJS environment variables.");
 }
