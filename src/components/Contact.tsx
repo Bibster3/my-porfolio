@@ -38,7 +38,7 @@ if (!serviceId || !templateId || !publicKey) {
     (res: any) => {
       console.log("✅ Email sent:", res);
       setStatus("✅ Message sent successfully!");
-      setFormData({ name: "", email: "", title: "", message: "" });
+      setFormData({ name: "", email: "", title: "", message: "" })
     },
     (err: any) => {
       console.error("❌ EmailJS error:", err);
@@ -56,6 +56,7 @@ if (!serviceId || !templateId || !publicKey) {
             type="text"
             name="name"
             placeholder="Your Name"
+            value={formData.name}
             onChange={handleChange}
             required
             className="w-full px-4 py-2 rounded bg-gray-800 border border-pink-500"
@@ -64,6 +65,7 @@ if (!serviceId || !templateId || !publicKey) {
             type="email"
             name="email"
             placeholder="Your Email"
+            value={formData.email}
             onChange={handleChange}
             required
             className="w-full px-4 py-2 rounded bg-gray-800 border border-pink-500"
@@ -72,6 +74,7 @@ if (!serviceId || !templateId || !publicKey) {
             type="text"
             name="title"
             placeholder="Subject"
+            value={formData.title}
             onChange={handleChange}
             required
             className="w-full px-4 py-2 rounded bg-gray-800 border border-pink-500"
@@ -80,6 +83,7 @@ if (!serviceId || !templateId || !publicKey) {
             name="message"
             rows={5}
             placeholder="Your Message"
+            value={formData.message}
             onChange={handleChange}
             required
             className="w-full px-4 py-2 rounded bg-gray-800 border border-pink-500"
