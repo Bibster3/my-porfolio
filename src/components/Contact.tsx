@@ -28,6 +28,7 @@ const Contact: React.FC = () => {
   const serviceId = "service_t0kzt2w";
 const templateId = "template_jn5md0l";
 const publicKey = "mFP23VlY-qjDoxFr1";
+
 if (!serviceId || !templateId || !publicKey) {
   throw new Error("Missing EmailJS environment variables.");
 }
@@ -37,6 +38,7 @@ if (!serviceId || !templateId || !publicKey) {
     (res: any) => {
       console.log("✅ Email sent:", res);
       setStatus("✅ Message sent successfully!");
+      setFormData({ name: "", email: "", title: "", message: "" });
     },
     (err: any) => {
       console.error("❌ EmailJS error:", err);
