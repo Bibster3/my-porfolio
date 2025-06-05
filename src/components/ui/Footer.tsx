@@ -1,11 +1,14 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-
+import {  LazyMotion, domAnimation, motion  } from "framer-motion";
+import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
+import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
+import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
 export default function Footer() {
 
   return (
-    <footer className="bg-gray-900 text-gray-300 py-8">
+  <LazyMotion features={domAnimation}>
+
+    <footer className="text-gray-300 py-8">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -43,5 +46,7 @@ export default function Footer() {
         <p className="text-sm text-gray-500 mt-4">© {new Date().getFullYear()} Built by Bilyana Stefanova. All rights reserved.</p>
       </motion.div>
     </footer>
+   </LazyMotion>
+
   );
 }

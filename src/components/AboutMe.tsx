@@ -1,13 +1,12 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { LazyMotion, domAnimation, motion } from "framer-motion";
 import ResumeDownloadButton from "./ResumeDownloadButton";
-import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare } from "react-icons/fa";
-import { SiTypescript, SiTailwindcss, SiGithub } from "react-icons/si";
-
 
 
 export default function AboutMe() {
   return (
+  <LazyMotion features={domAnimation}>
+
     <section id="about" className="min-h-screen bg-gray-900 text-white flex items-start justify-center pt-48 px-6 sm:px-10">
        
 
@@ -38,27 +37,14 @@ export default function AboutMe() {
         <p className="font-semibold text-center">Let's collaborate on your next venture!</p>
          
          {/* Skill Tags */}
-        <div className="flex flex-wrap justify-center gap-3 mt-8">
-          <SkillTag icon={<FaHtml5 />} label="HTML" />
-          <SkillTag icon={<FaCss3Alt />} label="CSS" />
-          <SkillTag icon={<FaJsSquare />} label="JavaScript" />
-          <SkillTag icon={<SiTypescript />} label="TypeScript" />
-          <SkillTag icon={<FaReact />} label="React" />
-          <SkillTag icon={<SiTailwindcss />} label="Tailwind CSS" />
-          <SkillTag icon={<SiGithub />} label="Git & GitHub" />
-        </div>
-
+       
          <div className="flex justify-center mt-10 pt-10">
           <ResumeDownloadButton />
         </div>
       </motion.div>
     </section>
+  </LazyMotion>
+
   );
 }
 
-const SkillTag = ({ icon, label }: { icon: React.ReactNode; label: string }) => (
-  <div className="flex items-center gap-2 bg-pink-500 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md whitespace-nowrap">
-    {icon}
-    <span>{label}</span>
-  </div>
-);

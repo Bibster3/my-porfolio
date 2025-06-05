@@ -1,5 +1,5 @@
-import React from 'react';
-import profileImage from '../../public/profile.jpg'; // Adjust the path as needed
+import React from 'react'
+import profileImage from '../../public/profile.webp'
 
 export default function AnimatedLogo() {
   return (
@@ -46,5 +46,5 @@ export default function AnimatedLogo() {
         }
       `}</style>
     </div>
-  );
+  )
 }
