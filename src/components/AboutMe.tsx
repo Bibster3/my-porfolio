@@ -1,7 +1,15 @@
 import React from "react";
 import { LazyMotion, domAnimation, motion } from "framer-motion";
 import ResumeDownloadButton from "./ResumeDownloadButton";
-
+import { FaHtml5 } from "@react-icons/all-files/fa/FaHtml5";
+import { FaCss3Alt } from "@react-icons/all-files/fa/FaCss3Alt";
+import { FaJsSquare } from "@react-icons/all-files/fa/FaJsSquare";
+import { FaReact } from "@react-icons/all-files/fa/FaReact";
+import { SiTypescript } from "@react-icons/all-files/si/SiTypescript";
+import { SiTailwindcss } from "@react-icons/all-files/si/SiTailwindcss";
+import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
+import { SiAdobephotoshop } from "@react-icons/all-files/si/SiAdobephotoshop";
+import { SiUnity } from "@react-icons/all-files/si/SiUnity";
 
 export default function AboutMe() {
   return (
@@ -37,7 +45,44 @@ export default function AboutMe() {
         <p className="font-semibold text-center">Let's collaborate on your next venture!</p>
          
          {/* Skill Tags */}
-       
+       <div className="flex justify-center gap-6 mt-10 pt-10">
+      <div className="flex items-center gap-2 text-pink-400">
+        <FaHtml5 size={30} />
+        <span>HTML</span>
+      </div>
+      <div className="flex items-center gap-2 text-pink-400">
+        <FaCss3Alt size={30} />
+        <span>CSS</span>
+      </div>
+      <div className="flex items-center gap-2 text-pink-400">
+        <FaJsSquare size={30} />
+        <span>JavaScript</span>
+      </div>
+      <div className="flex items-center gap-2 text-pink-400">
+        <FaReact size={30} />
+        <span>React</span>
+      </div>
+      <div className="flex items-center gap-2 text-pink-400">
+        <SiTypescript size={30} />
+        <span>TypeScript</span>
+      </div>
+          <div className="flex items-center gap-2 text-pink-400">
+        <SiTailwindcss size={30} />
+        <span>TailwindCSS</span>
+      </div>
+      <div className="flex items-center gap-2 text-pink-400">
+        <FaGithub size={30} />
+        <span>GitHub</span>
+      </div>
+       <div className="flex items-center gap-2 text-pink-400">
+        <SiAdobephotoshop size={30} />
+        <span>Photoshop</span>
+      </div>
+      <div className="flex items-center gap-2 text-pink-400">
+        <SiUnity size={30} />
+        <span>Unity</span>
+      </div>
+    </div>
          <div className="flex justify-center mt-10 pt-10">
           <ResumeDownloadButton />
         </div>
