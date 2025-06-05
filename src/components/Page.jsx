@@ -1,13 +1,13 @@
 import React, { lazy, Suspense, useState, useEffect, useRef } from 'react'
 import AboutMe from './AboutMe.tsx'
 import Footer from './ui/Footer.tsx'
-import Spotlight from './ui/Spotlight.tsx'
 import NavLinks from './ui/NavLinks.jsx'
 import AnimatedLogo from './ui/AnimatedLogo.jsx'
 import Divider from './ui/Divider.tsx'
 
 const Portfolio = lazy(() => import('./Portfolio'))
 const Contact = lazy(() => import('./Contact'))
+const Spotlight = lazy(() => import('./ui/Spotlight'))
 
 const items = [
   {
@@ -56,8 +56,11 @@ const Page = () => {
   return (
     <>
       <main>
-        {/* <Spotlight /> */}
-
+        <Suspense
+          fallback={<div className="min-h-[200px]" aria-hidden="true" />}
+        >
+          <Spotlight />
+        </Suspense>
         <div className="relative z-50">
           <NavLinks />
         </div>
