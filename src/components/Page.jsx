@@ -5,7 +5,6 @@ import Spotlight from './ui/Spotlight.tsx'
 import NavLinks from './ui/NavLinks.jsx'
 import AnimatedLogo from './ui/AnimatedLogo.jsx'
 import Divider from './ui/Divider.tsx'
-import { IconClipboardCopy } from '@tabler/icons-react'
 
 const Portfolio = lazy(() => import('./Portfolio'))
 const Contact = lazy(() => import('./Contact'))
@@ -15,7 +14,6 @@ const items = [
     title: 'CalorieMate',
     description: 'A React-based SPA to track daily calorie intake.',
     header: <h3>Project</h3>,
-    icon: <IconClipboardCopy />,
   },
 ]
 
@@ -71,7 +69,7 @@ const Page = () => {
         {/* About Section */}
         <section id="about">
           <div>
-          <AboutMe/>
+            <AboutMe />
           </div>
         </section>
         <Divider />
