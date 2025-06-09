@@ -45,7 +45,7 @@ export default function AboutMe() {
         <p className="font-semibold text-center">Let's collaborate on your next venture!</p>
          
          {/* Skill Tags */}
-       <div className="flex justify-center gap-6 mt-10 pt-10">
+       <div className="flex flex-wrap justify-center gap-10 mt-10 pt-10">
       <div className="flex items-center gap-2 text-pink-400">
         <FaHtml5 size={30} />
         <span>HTML</span>
@@ -83,7 +83,7 @@ export default function AboutMe() {
         <span>Unity</span>
       </div>
     </div>
-         <div className="flex justify-center mt-10 pt-10">
+         <div className="flex justify-center mt-10 pt-10 pb-20">
           <ResumeDownloadButton />
         </div>
       </motion.div>
