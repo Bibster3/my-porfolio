@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/bilyana-st/static/css/main.8ddff748.css",
-    "main.js": "/bilyana-st/static/js/main.cc5239bc.js",
+    "main.css": "/bilyana-st/static/css/main.0b936800.css",
+    "main.js": "/bilyana-st/static/js/main.e0697761.js",
     "static/js/903.a46ba37b.chunk.js": "/bilyana-st/static/js/903.a46ba37b.chunk.js",
     "static/js/44.0979e397.chunk.js": "/bilyana-st/static/js/44.0979e397.chunk.js",
     "static/js/797.e544ffb3.chunk.js": "/bilyana-st/static/js/797.e544ffb3.chunk.js",
     "static/js/245.f4b76371.chunk.js": "/bilyana-st/static/js/245.f4b76371.chunk.js",
     "static/media/profile.webp": "/bilyana-st/static/media/profile.926a293a17e7fd0aa077.webp",
     "index.html": "/bilyana-st/index.html",
-    "main.8ddff748.css.map": "/bilyana-st/static/css/main.8ddff748.css.map",
-    "main.cc5239bc.js.map": "/bilyana-st/static/js/main.cc5239bc.js.map",
+    "main.0b936800.css.map": "/bilyana-st/static/css/main.0b936800.css.map",
+    "main.e0697761.js.map": "/bilyana-st/static/js/main.e0697761.js.map",
     "903.a46ba37b.chunk.js.map": "/bilyana-st/static/js/903.a46ba37b.chunk.js.map",
     "44.0979e397.chunk.js.map": "/bilyana-st/static/js/44.0979e397.chunk.js.map",
     "797.e544ffb3.chunk.js.map": "/bilyana-st/static/js/797.e544ffb3.chunk.js.map",
     "245.f4b76371.chunk.js.map": "/bilyana-st/static/js/245.f4b76371.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ddff748.css",
-    "static/js/main.cc5239bc.js"
+    "static/css/main.0b936800.css",
+    "static/js/main.e0697761.js"
   ]
 }
